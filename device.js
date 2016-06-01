@@ -22,7 +22,7 @@ async.waterfall([
     api.createNode(config.nodeID, cb);
   },
   function createRemoteCSE(nodeRI, cb){
-    console.log(colors.blue('2. remoceCSE 생성 요청'));
+    console.log(colors.blue('2. remoteCSE 생성 요청'));
     config.nodeRI = nodeRI;
     api.createRemoteCSE(config.nodeID, config.nodeRI, config.passCode, cb);
   },
